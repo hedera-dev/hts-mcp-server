@@ -2,6 +2,25 @@
 
 A Model Context Protocol (MCP) server for interacting with the Hedera network. This server provides tools for creating Hedera wallets, checking account balances, building transactions, and sending signed transactions.
 
+## ⚠️ Security Warning
+
+**This is a demo implementation and should NOT be used in production.** The current implementation has several security vulnerabilities:
+
+- Private keys are sent in response bodies
+- No encryption of sensitive data
+- No transaction verification mechanisms
+
+This implementation is meant to demonstrate the MCP concept and should be properly secured before being used in a production environment.
+
+## Main Objectives
+
+The primary purpose of this MCP server is to demonstrate how transaction construction and execution can be handled by the MCP server, with the client only needing to verify the transaction. Specifically:
+
+1. Transaction construction happens entirely on the MCP server
+2. Clients signs the constructed transactions
+3. The MCP server handles transaction submission to the Hedera network
+4. This architecture allows for centralized transaction logic and reduces client-side complexity
+
 ## Prerequisites
 
 - Node.js (v18 or higher)
