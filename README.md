@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/hedera-dev-hts-mcp-server-badge.png)](https://mseep.ai/app/hedera-dev-hts-mcp-server)
+
 # Hedera MCP Server
 
 A Model Context Protocol (MCP) server for interacting with the Hedera network. This server provides tools for creating Hedera wallets, checking account balances, building transactions, and sending signed transactions.
